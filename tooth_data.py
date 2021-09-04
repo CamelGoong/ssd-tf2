@@ -28,8 +28,8 @@ class ToothDataset():
                                  for k, v in enumerate(self.idx_to_name)])
 
         self.data_dir = root_dir
-        self.image_dir = os.path.join(self.data_dir, 'img')
-        self.anno_dir = os.path.join(self.data_dir, 'json')
+        self.image_dir = os.path.join(self.data_dir, 'img_train')
+        self.anno_dir = os.path.join(self.data_dir, 'json_train')
         self.ids = [i for i in os.listdir(self.image_dir) if i.startswith('Folder')]
         self.default_boxes = default_boxes
         self.new_size = new_size
